@@ -6,18 +6,12 @@ import { CounterModule } from './counter/counter.module';
 import { AppComponent } from './app.component';
 import { HeroComponent } from './heroes/hero/hero.component';
 import { ListComponent } from './heroes/list/list.component';
+import { DbzModule } from './dbz/dbz.module';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    HeroComponent,
-    ListComponent
-  ],
-  imports: [
-    BrowserModule,
-    CounterModule,
-  ],
+  declarations: [AppComponent, HeroComponent, ListComponent],
+  imports: [BrowserModule, CounterModule, DbzModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
